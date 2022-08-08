@@ -66,30 +66,15 @@
 ## SOLUCIÓN DE EJERCICIOS/PROBLEMAS
 
 #
-## Ejercicio 1: Modificar el método de obtención de valor dado una clave (5 puntos)
 
-- ¿Como puedo compilar este ejercicio correctamente en mi pc?
+- ¿Como puedo compilar el arbol B correctamente en mi pc?
 
 Despúes de clonar este repositorio, para poder ejecutar el código sin dificultad es recomendable que se ejecute desde el IDE eclipse, pues su desarrollo se dio en este,y por ello mismo es que se subieron tambien los archivos necesarios para ejecutarse ahí. Tenemos 2 clases, la primera es la proporcionada por el docente, la segunda es un archivo JAVA (Main) en donde se realiza las pruebas.
 
-</div>
 
 - Enlace a código en GitHub : [Ver Código BTree](https://github.com/AntonyBlanco/lab06groupEDA/blob/main/BTree.java)
 
 - Enlace a código en GitHub : [Ver Código Test](https://github.com/AntonyBlanco/lab06groupEDA/blob/main/Test.java)
-
-#
-
--   Planificamos La Resolución:
-
--Iniciamos La Implememntación:
-
-Ahora que tenemos la idea más clara de como implementaremos los requerimeintos vamos a ir con ello:
-
-
--   Parte 1
-
-Vemos que para lograr una asignación. dividimos en dos el tamaño de la cadena, esto para forzar a que la primera mitad de los caracteres(valores númericos) se vayan a alamcenar en la pila, y la siguiente tanda en de caracteres (valores numericos) en la cola.
 
 
 #
