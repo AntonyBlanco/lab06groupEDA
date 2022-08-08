@@ -148,97 +148,60 @@ Ejemplo 1:
 ## Ejercicio 2: Mostrar en un diagrama de árbol gráficamente la estructura final para los datos ingresados. (4 puntos)
 
 
--   En esta sección vamos se nos pide una implementación manual. de la serie de pasos que se nos proponen en los requerimientos del segundo Problema  de los ejercicios propuestos en: [Repositorio con Ejercicios propuestos](https://github.com/rescobedoq/eda/tree/main/labs/lab05) vamos a hacer uso de estas estructuras de datos para poder equilibrar los corchetes.
-
+-   En esta sección vamos a hacer una implementación manual. para ello le mostramos los pasos realizados.
 
 -   Iniciamos La Resolución...
 
--   Parte 1
 
-Para La Sección de Inserción:
 
-Inserción1
+Parte 1
 <div align="center">
 
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-a.JPG)
+![Ejecucion](Ejercicio2/Diagramas/paso-a.JPG)
 </div>
 
-Inserción 1
+Parte 1
 <div align="center">
 
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-a.JPG)
+![Ejecucion](Ejercicio2/Diagramas/paso-b.JPG)
 </div>
 
-Inserción 2
+Parte 2
 <div align="center">
 
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-b.JPG)
+![Ejecucion](Ejercicio2/Diagramas/paso-c.JPG)
 </div>
 
-Inserción 3
+Parte 3
 <div align="center">
 
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-c.JPG)
+![Ejecucion](Ejercicio2/Diagramas/paso-d.JPG)
 </div>
 
-Inserción 4
+Parte 4
 <div align="center">
 
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-d.JPG)
+![Ejecucion](Ejercicio2/Diagramas/paso-e.JPG)
 </div>
 
-Inserción 5
+Parte 5
 <div align="center">
 
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-e.JPG)
+![Ejecucion](Ejercicio2/Diagramas/paso-f.JPG)
 </div>
 
-Inserción 6
+Parte 6
 <div align="center">
 
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-f.JPG)
+![Ejecucion](Ejercicio2/Diagramas/paso-g.JPG)
 </div>
 
-Inserción 7
+Parte 7
 <div align="center">
 
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-g.JPG)
+![Ejecucion](Ejercicio2/Diagramas/paso-h.JPG)
 </div>
 
-Inserción 8
-<div align="center">
-
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-h.JPG)
-</div>
-
-Inserción 9
-<div align="center">
-
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-i.JPG)
-</div>
-
-Inserció 10
-<div align="center">
-
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-j.JPG)
-</div>
-
-Inserción 11
-<div align="center">
-
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20insercion/paso-k.JPG)
-</div>
-
--   Parte 2
-
-Para La sección de Eliminación
-
-
-Eliminación 10
-<div align="center">
-
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio02/graficos%20eliminacion/paso-j.JPG)
-</div>
 
 #
 ## Ejercicio 3: El método toString() del árbol, retorna lo siguiente. ¿Por qué están entre paréntesis ciertas claves? (4 puntos)
