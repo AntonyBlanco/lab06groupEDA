@@ -20,7 +20,7 @@ public static void main(String[] args) {
 	st.put("www.yahoo.com", "216.109.118.65");
 	
 	//Ejercicio 4: agregamos nodo adicional (www.youtube.com, 134.24.13.78)
-	st.put("www.youtube.com", "134.24.13.78");
+	//st.put("www.youtube.com", "134.24.13.78");
 	
 	System.out.println(st.toString());
 }
