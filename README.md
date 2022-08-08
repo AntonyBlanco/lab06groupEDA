@@ -70,78 +70,26 @@
 
 - ¿Como puedo compilar este ejercicio correctamente en mi pc?
 
-Despúes de clonar este repositorio, para poder ejecutar este ejercicio (Ejericio01) sin dificultad es recomendable que se ejecute desde el IDE eclipse, pues su desarrollo se dio en este,y por ello mismo es que se subieron tambien los archivos necesarios para ejecutarse ahí. Sin embargo, al tener implementado todo el código en una sola clase de JAVA, puede ejecutarse con normalidad desde la consola.
+Despúes de clonar este repositorio, para poder ejecutar el código sin dificultad es recomendable que se ejecute desde el IDE eclipse, pues su desarrollo se dio en este,y por ello mismo es que se subieron tambien los archivos necesarios para ejecutarse ahí. Tenemos 2 clases, la primera es la proporcionada por el docente, la segunda es un archivo JAVA (Main) en donde se realiza las pruebas.
 
 </div>
 
-- Enlace a código en GitHub (solo código): [Ver Código](https://github.com/AntonyBlanco/lab05groupEDA/blob/main/Ejercicio01/CorchetesEquilibrados.java)
+- Enlace a código en GitHub : [Ver Código BTree](https://github.com/AntonyBlanco/lab06groupEDA/blob/main/BTree.java)
 
-- Planificamos La Resolución:
+- Enlace a código en GitHub : [Ver Código Test](https://github.com/AntonyBlanco/lab06groupEDA/blob/main/Test.java)
 
-En sesiones anteriores habíamos hablado de las posibilidades del uso de pilas y colas para la solución de implementaciones que requiriesen almacenar informacón para luego retrotraer estas, por ejemplo, en la implementación de el conocido comando "CTRL+Z". Pues bien, ahora, para solucionar los requerimientos del primer Problema  de los ejercicios propuestos en: [Repositorio con Ejercicios propuestos](https://github.com/rescobedoq/eda/tree/main/labs/lab05) vamos a hacer uso de estas estructuras de datos para poder equilibrar los corchetes.
+#
 
-La idea es que tengamos una Pila y Una Cola. Una pila para almacenar las llaves de apertura y una cola para almacenar las llaves de cierre. 
+-   Planificamos La Resolución:
 
-Por Ejemplo: Almacenaremos las llaves de esta cadena segun corresponda.
-
--   La cadena de llaves:
-
-<div align="center">
-
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio01/img%20(8).png)
-</div>
-
--   Iniciamos La Implememntación:
+-Iniciamos La Implememntación:
 
 Ahora que tenemos la idea más clara de como implementaremos los requerimeintos vamos a ir con ello:
 
 
 -   Parte 1
 
-Primero, vamos a implmentar una funcion que permita Llenar asignar los valores númericos que habiamos propuesto a acada llave. Entonces tenemos:
-
-
-```sh 
-	public static int relacionarLLaves(char c) {
-		int valor=0;
-		char [] corchetes = {'{','}','[',']','(',')'};
-		int  [] valorNum = {1,-1,2,-2,3,-3};
-		for (int i = 0; i < corchetes.length; i++) {
-			if (c==corchetes[i]) {
-			valor= valorNum[i];
-			}
-		}
-		return valor;
-	}
-```
-En esta sección no hay mayor secreto. Hacemos uso de un arreglo para poder asignar a un caracter que se ingrese un valor númerico. 
-
--   Parte 2
-
-Ya que tenemos lista la función de asignación, ahora vamos a crear una función "LlenarColaYPila" la que permitirá agregar los valores númericos de las llaves de apertura en una pila y los valores númericos de las llaves de cierre en una cola. Así tenemos:
-
-```sh 
-	public static void llenarColaYPila(String cadena) {
-		for (int i = 0; i < cadena.length(); i++) {
-			if ((i<cadena.length()/2)) {
-				pila.push(relacionarLLaves(cadena.charAt(i)));
-			}else {
-				cola.offer(relacionarLLaves(cadena.charAt(i)));
-			}
-		}
-	}
-```
 Vemos que para lograr una asignación. dividimos en dos el tamaño de la cadena, esto para forzar a que la primera mitad de los caracteres(valores númericos) se vayan a alamcenar en la pila, y la siguiente tanda en de caracteres (valores numericos) en la cola.
-
-
--   Ejecución: Imagenes de la ejecución Corchetes equilibrados con distintas salidas
-
-Ejemplo 1:
-
-<div align="center">
-
-![Ejecucion](Imagenes%20Para%20Informe/Ejercicio01/img%20(9).png)
-</div>
 
 
 #
@@ -206,13 +154,25 @@ Parte 7
 #
 ## Ejercicio 3: El método toString() del árbol, retorna lo siguiente. ¿Por qué están entre paréntesis ciertas claves? (4 puntos)
 
+
+
 -Mostrar paso a paso el arbol-B al eliminar " www.espn.com": (4 puntos)
 
-Se realizó la implementación de inserción de un árbol AVL basado en la implementación de un Arbol Binario de Busqueda.
+-Gáfico Postinserciones
+<div align="center">
 
-Se diseñaron pruebas para diferentes casos como la aplicacion de rotaciones cuando el factor de equilibrio supera los límites definidos por la definición de un arbol AVL.
+![Ejecucion](Ejercicio%204/Imagenes/ResultadoPosInserciones.png)
+</div>
 
-El código se puede revisar en el siguiente link: [Arbol AVL](https://github.com/AntonyBlanco/lab05groupEDA/tree/main/Ejercicio03) ubicado en el directorio "Ejercicio03" del repositorio actual.
+-Gráfico de eliminación:
+
+<div align="center">
+
+![Ejecucion](Ejercicio%204/Imagenes/ResulrtadoPostEliminacionESPN.png)
+</div>
+
+se Procede a ubicar el nodo requerido "ESPN" y al no presentar mayor complicacion que implique algun tipo de rehubicación simplemnete una veze necontrado el nodo procedmos a eliminarlo.
+
 
 #
 ## Ejercicio 4: Agregar un nodo adicional (www.youtube.com, 134.24.13.78) y mostrarlo paso a paso. (3 puntos)
@@ -271,7 +231,7 @@ Hacemos una última rehubicación y logramos insertar correctamente la clave sol
 
 #
 
--   Las colas y pilas se van a utilizar como una solución precisa para diversos problemas de administración de la información así como la ordenada ejecución de procesos.
+- Comprobamos de que el tratamiento de la información con un árbol Btree parece ser más eficientes en temas de velocidad a diferecnia de otras estructuras de datos.
 
 
 #
